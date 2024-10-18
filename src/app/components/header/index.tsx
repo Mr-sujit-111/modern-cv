@@ -85,7 +85,7 @@ export default function Navigation() {
                                 </div>
                             </div>
                             <div>
-                                <item.icon className={`${isMobile ? 'text-3xl' : ''}`} />
+                                <item.icon className={`text-white  ${isMobile ? 'text-3xl' : ''}`} />
                             </div>
                         </Link>
                     </motion.div>
