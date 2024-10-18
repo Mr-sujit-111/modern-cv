@@ -10,6 +10,7 @@ export const Hero = () => {
     const sliderVariants = {
         initial: {
             x: 0,
+
         },
         animate: {
             x: -220,
@@ -32,8 +33,8 @@ export const Hero = () => {
                     {"Sujit Bhanderi"?.split("")?.map((item, index) => {
                         console.log("🚀 bgf", item?.length);
                         return <motion.span
-                            initial={{ opacity: 0, x: -10 }}
-                            animate={{ opacity: 1, x: 0 }}
+                            initial={{ opacity: 0, }}
+                            animate={{ opacity: 1, }}
                             transition={{ duration: 0.3, delay: index * 0.2 }}
 
                             key={index}>{item?.trim()?.length > 0 ? item : "\u00A0"}</motion.span>;
@@ -58,9 +59,9 @@ export const Hero = () => {
                 >
                     <Link href={"#portfolio"}>
                         <motion.button
-                            initial={{ opacity: 0, x: 10 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.2, delay: 3 }}
+                            initial={{ opacity: 0, }}
+                            animate={{ opacity: 1, }}
+                            transition={{ duration: 1, }}
                             type="button"
                             className="p-2 md:p-4 transition-all duration-500 border border-white rounded-lg bg-transparent text-white font-light text-base cursor-pointer "
                         >
@@ -69,9 +70,9 @@ export const Hero = () => {
                     </Link>
                     <Link href={"#contact"}>
                         <motion.button
-                            initial={{ opacity: 0, x: -10 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ duration: 0.2, delay: 3 }}
+                            initial={{ opacity: 0, }}
+                            animate={{ opacity: 1, }}
+                            transition={{ duration: 1, }}
                             className="p-2 md:p-4 border transition-all duration-500 border-white rounded-lg bg-white text-black font-light text-base "
                         >
                             Contact Me
@@ -81,11 +82,10 @@ export const Hero = () => {
 
                 <Link href={"#second"}>
                     <motion.button
-
                         className="w-12 h-12 animate-pulse"
-                        initial={{ opacity: 0, y: -10 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1.5, delay: 5 }}
+                        initial={{ opacity: 0, }}
+                        animate={{ opacity: 1, }}
+                        transition={{ duration: 1, delay: 1.5 }}
                     >
                         <RiScrollToBottomFill className="h-full w-full" />
                     </motion.button>
@@ -93,12 +93,18 @@ export const Hero = () => {
 
             </motion.article>
             <motion.div
-                initial="initial"
-                animate="animate"
-                variants={sliderVariants}
-                className="absolute select-none text-opacity-45 text-[30vh] -bottom-28 whitespace-nowrap text-hero-bottom w-1/2 font-bold text-[#ffffff09]"
+                initial={{ opacity: 0, }}
+                animate={{ opacity: 1, }}
+                transition={{ duration: 1, }}
             >
-                Programmer, Developer, Problem Solver
+                <motion.div
+                    initial="initial"
+                    animate="animate"
+                    variants={sliderVariants}
+                    className="absolute select-none text-opacity-45 text-[30vh] -bottom-28 whitespace-nowrap text-hero-bottom w-1/2 font-bold text-[#ffffff09]"
+                >
+                    Programmer, Developer, Problem Solver
+                </motion.div>
             </motion.div>
 
         </div >

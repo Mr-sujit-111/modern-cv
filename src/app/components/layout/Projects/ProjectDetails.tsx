@@ -40,7 +40,7 @@ export const ProjectDetails = ({
                     <Link href={link} target="_blank">
                         <button
                             type="button"
-                            className="bg-orange-400 border-0 rounded-lg p-2 w-48 cursor-pointer text-black hover:bg-orange-500 text-lg"
+                            className="bg-gray-700 transition-all duration-500 border-0 rounded-lg p-2 w-48 cursor-pointer text-white hover:bg-white hover:text-background text-lg"
                         >
                             See Demo
                         </button>

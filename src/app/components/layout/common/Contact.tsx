@@ -107,7 +107,9 @@ export const Contact = () => {
                     />
                     <button
                         type="submit"
-                        className="p-2 md:p-4 border-0 bg-orange-500 cursor-pointer font-medium text-black rounded-md hover:bg-orange-600 text-lg"
+                        className="p-2 md:p-4 border-0 bg-gray-700 cursor-pointer font-medium transition-all duration-500 rounded-md text-white hover:bg-white hover:text-background text-lg"
+
+                    /* bg-gray-700 transition-all duration-500 border-0 rounded-lg p-2 w-48 cursor-pointer text-white hover:bg-white hover:text-background text-lg */
                     >
                         Submit
                     </button>

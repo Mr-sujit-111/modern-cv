@@ -68,10 +68,10 @@ export const Portfolio = () => {
     return (
         <div ref={ref} className="relative">
             <article className="sticky top-0 left-0 pt-4 md:pt-10 flex flex-col gap-2">
-                <h2 className="text-center text-orange-400 text-2xl md:text-5xl">
+                <h2 className="text-center text-white text-2xl md:text-5xl">
                     Completed Projects
                 </h2>
-                <motion.div style={{ scaleX }} className="h-2 bg-white" />
+                <motion.div style={{ scaleX }} className="h-1 rounded-xl bg-white" />
             </article>
             {projectData.map(item => (
                 <ProjectDetails key={item.id} {...item} />
