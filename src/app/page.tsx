@@ -1,4 +1,5 @@
 
+import HeaderPage from "./components/header";
 import { Contact } from "./components/layout/common/Contact";
 import { CustomCursor } from "./components/layout/common/CustomCursor";
 import { Parallax } from "./components/layout/common/Parallax";
@@ -9,7 +10,8 @@ export default function Home() {
   return (
     <main className="" >
       <CustomCursor />
-      <section className="w-full bg-background h-screen overflow-hidden snap-center">
+      <HeaderPage />
+      <section id="home" className="w-full bg-background h-screen overflow-hidden snap-center">
         <Hero />
       </section>
       <section className="w-full bg-background h-screen overflow-hidden snap-center">
