@@ -20,7 +20,7 @@ export const Hero = () => {
         },
     };
     return (
-        <div className="h-[calc(100vh-40px)]  overflow-hidden relative">
+        <div className="h-[calc(100vh-40px)] text-white  overflow-hidden relative">
             <motion.article
 
                 className="container max-w-7xl mx-auto h-full xl:h-3/4 flex flex-col gap-4 md:gap-8 items-center justify-center text-center"
