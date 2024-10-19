@@ -27,7 +27,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/components/layout/common/TypewriterText.jsx",
-    "src/app/components/layout/Projects/index.jsx"
+    "src/app/components/layout/Projects/index.jsx",
+    "src/app/components/layout/Projects/indextjsx"
   ],
   "exclude": ["node_modules"]
 }

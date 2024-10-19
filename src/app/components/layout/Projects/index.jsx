@@ -73,12 +73,14 @@ export const Portfolio = () => {
     });
     return (
         <div ref={ref} className="relative">
-            {/*  <article className="sticky top-0 left-0 pt-4 md:pt-10 flex flex-col gap-2">
-                <h2 className="text-center text-white text-2xl md:text-5xl">
-                    Completed Projects
-                </h2>
+            <article className="sticky top-0 left-0  flex flex-col gap-4">
+                <header className="w-full text-center py-8 bg-gray-800">
+                    <h2 className="text-center text-white text-2xl md:text-7xl">
+                        Completed Projects
+                    </h2>
+                </header>
                 <motion.div style={{ scaleX }} className="h-1 rounded-xl bg-white" />
-            </article> */}
+            </article>
             {projectData.map(item => (
                 <ProjectDetails key={item.id} {...item} />
             ))}
