@@ -16,7 +16,7 @@ export const Hero = () => {
             x: -220,
             transition: {
                 repeat: Infinity,
-                duration: 20,
+                duration: 10,
             },
         },
     };
@@ -103,7 +103,7 @@ export const Hero = () => {
                     variants={sliderVariants}
                     className="absolute select-none text-opacity-45 text-[30vh] -bottom-28 whitespace-nowrap text-hero-bottom w-1/2 font-bold text-[#ffffff09]"
                 >
-                    Programmer, Developer, Problem Solver
+                    Problem Solver, Developer
                 </motion.div>
             </motion.div>
 

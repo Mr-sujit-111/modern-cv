@@ -12,6 +12,7 @@ export const Portfolio = () => {
             description:
                 "A 'T-shirt Design' app that people can design and customize tshirts with diffrent colours & diffrent tatoos",
             link: "https://t-shirt-design-5818e.web.app/",
+            technologies: []
         },
         {
             id: 1,
@@ -20,6 +21,7 @@ export const Portfolio = () => {
             description:
                 "This app is build in plane html,css and javascript, pure javascript is used for the develope multi step image selection with download functionality",
             link: "https://animatedapp.netlify.app/",
+            technologies: []
         },
         {
             id: 2,
@@ -28,6 +30,7 @@ export const Portfolio = () => {
             description:
                 "NextJs project & NextAuth for the authentificate user also provide stripe checkout for payment particular item(s) and store all data in firestore.",
             link: "https://amazon-clone-928j.vercel.app/",
+            technologies: []
         },
         {
             id: 3,
@@ -36,6 +39,7 @@ export const Portfolio = () => {
             description:
                 "A Google-clone is completely redesign google with reactjs and provide google apis for user result also provide design.",
             link: "https://clone-61cf3.web.app/",
+            technologies: []
         },
         {
             id: 4,
@@ -44,6 +48,7 @@ export const Portfolio = () => {
             description:
                 "A Slack-clone is one of the best chat-app which is completely build in reactjs with styled component for styling.",
             link: "https://slackclone-6f0e0.web.app/",
+            technologies: []
         },
         {
             id: 5,
@@ -52,6 +57,7 @@ export const Portfolio = () => {
             description:
                 "A Weather app where you can easily check weather information, currunt temprature and wind level",
             link: "https://weather-app-403d1.web.app/",
+            technologies: []
         },
     ];
     const ref = useRef(null);
@@ -67,12 +73,12 @@ export const Portfolio = () => {
     });
     return (
         <div ref={ref} className="relative">
-            <article className="sticky top-0 left-0 pt-4 md:pt-10 flex flex-col gap-2">
+            {/*  <article className="sticky top-0 left-0 pt-4 md:pt-10 flex flex-col gap-2">
                 <h2 className="text-center text-white text-2xl md:text-5xl">
                     Completed Projects
                 </h2>
                 <motion.div style={{ scaleX }} className="h-1 rounded-xl bg-white" />
-            </article>
+            </article> */}
             {projectData.map(item => (
                 <ProjectDetails key={item.id} {...item} />
             ))}

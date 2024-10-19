@@ -11,19 +11,19 @@ export default function Home() {
     <main className="" >
       <CustomCursor />
       <HeaderPage />
-      <section id="home" className="w-full bg-background h-screen overflow-hidden snap-center">
+      <section id="home" className="w-full bg-gradient-to-b from-gray-900 to-background h-screen overflow-hidden snap-center">
         <Hero />
       </section>
-      <section className="w-full bg-background h-screen overflow-hidden snap-center">
+      <section id="second" className="w-full bg-gradient-to-b from-gray-900 to-background h-screen overflow-hidden snap-center">
         <Parallax type="services" />
       </section>
       <section id="portfolio" className="bg-hero-gradient">
         <Portfolio />
       </section>
-      <section className="w-full bg-background h-screen overflow-hidden snap-center">
+      <section className="w-full bg-gradient-to-b from-gray-900 to-background h-screen overflow-hidden snap-center">
         <Parallax type="Technologies" />
       </section>
-      <section id="contact" className="w-full bg-background h-screen overflow-hidden snap-center">
+      <section id="contact" className="w-full bg-gradient-to-b from-gray-900 to-background h-screen overflow-hidden snap-center">
         <Contact />
       </section>
 
