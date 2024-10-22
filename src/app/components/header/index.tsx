@@ -8,6 +8,7 @@ import { HiEnvelope, HiHome } from 'react-icons/hi2'
 import { MdWork } from 'react-icons/md'
 import { useState, useEffect } from 'react'
 import { GiTechnoHeart } from 'react-icons/gi'
+import { FaUser } from 'react-icons/fa'
 
 interface NavItem {
     name: string
@@ -17,6 +18,7 @@ interface NavItem {
 
 const navData: NavItem[] = [
     { name: 'home', path: '#home', icon: HiHome },
+    { name: 'About', path: '#about', icon: FaUser },
     { name: 'Technologies', path: '#tech', icon: GiTechnoHeart },
     { name: 'projects', path: '#portfolio', icon: MdWork },
     { name: 'contact', path: '#contact', icon: HiEnvelope },

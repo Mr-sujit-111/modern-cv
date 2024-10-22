@@ -40,9 +40,9 @@ const TechnologyStackPage = () => {
     const [hoveredTech, setHoveredTech] = useState<string | null>(null);
 
     return (
-        <div className="relative flex flex-col items-center h-screen bg-gray-900 overflow-hidden">
+        <div className="relative flex flex-col items-center h-screen overflow-hidden">
             {/* Full Responsive Header */}
-            <header className="w-full text-center py-8 bg-gray-800">
+            <header className="w-full text-center py-8 ">
                 <h2 className="text-center text-white text-2xl md:text-7xl">
                     Technology Stack
                 </h2>
@@ -61,11 +61,11 @@ const TechnologyStackPage = () => {
                     {technologies.map((tech, index) => (
                         <motion.div
                             key={index}
-                            className="relative w-[90px] h-[90px] flex-shrink-0  md:w-32 md:h-32 rounded-full flex items-center justify-center bg-gray-800 cursor-pointer group"
+                            className="relative w-[90px] h-[90px] flex-shrink-0  md:w-32 md:h-32 rounded-full flex items-center justify-center  cursor-pointer group"
                             whileHover={{ ...hoverEffect }}
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: index * 0.1, duration: 0.3 }}
+                            transition={{ duration: 0.3 }}
                             onMouseEnter={() => setHoveredTech(tech.name)}
                             onMouseLeave={() => setHoveredTech(null)}
                         >
@@ -78,7 +78,7 @@ const TechnologyStackPage = () => {
                             {/* Tooltip with Notch */}
                             {hoveredTech === tech.name && (
                                 <motion.div
-                                    className="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 px-4 py-2 bg-gray-800 text-white text-sm rounded-md shadow-md"
+                                    className="absolute bottom-full mb-4 left-1/2 transform -translate-x-1/2 px-4 py-2  text-white text-sm rounded-md shadow-md"
                                     variants={tooltipVariant}
                                     initial="hidden"
                                     animate="visible"

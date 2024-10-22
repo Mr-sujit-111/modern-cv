@@ -3,10 +3,10 @@ import { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 
 interface ParallaxProps {
-    type: "services" | "Technologies";
+    title: string;
 }
 
-export const Parallax = ({ type }: ParallaxProps) => {
+export const Parallax = ({ title }: ParallaxProps) => {
     const ref = useRef<HTMLDivElement | null>(null);
 
     const { scrollYProgress } = useScroll({
@@ -24,9 +24,10 @@ export const Parallax = ({ type }: ParallaxProps) => {
         >
             <motion.h1
                 style={{ y: yText }}
-                className="capitalize text-center md:text-start text-8xl md:text-6xl"
+                className="capitalize text-center md:text-start text-8xl md:text-8xl"
             >
-                {type === "services" ? "What We Do?" : "Mastry Techs"}
+
+                {title}
             </motion.h1>
             <motion.div
                 className={"bg-mountains-image bg-contain bg-no-repeat md:bg-repeat md:bg-cover bg-bottom w-full h-full absolute z-30"}
